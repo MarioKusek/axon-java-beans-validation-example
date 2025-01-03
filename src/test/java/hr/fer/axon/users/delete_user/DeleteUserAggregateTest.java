@@ -12,6 +12,7 @@ import org.axonframework.modelling.command.Repository;
 import org.axonframework.queryhandling.QueryGateway;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.DirtiesContext;
 
 import hr.fer.axon.TestContainersFixture;
 import hr.fer.axon.users.aggregates.UserAggregate;
@@ -23,6 +24,7 @@ import hr.fer.axon.users.events.UserDeleted;
 import hr.fer.axon.utils.ProjectionFixtureConfiguration;
 import hr.fer.axon.utils.ViolationException;
 
+@DirtiesContext
 class DeleteUserAggregateTest extends TestContainersFixture {
 
   @Autowired

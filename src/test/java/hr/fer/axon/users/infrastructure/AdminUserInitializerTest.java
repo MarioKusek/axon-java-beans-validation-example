@@ -9,12 +9,14 @@ import java.util.concurrent.TimeUnit;
 import org.awaitility.Awaitility;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.TestPropertySource;
 
 import hr.fer.axon.TestContainersFixture;
 import hr.fer.axon.users.user_list.UserListEntity;
 import hr.fer.axon.users.user_list.UserListRepository;
 
+@DirtiesContext
 @TestPropertySource(properties = {
     "admin.user=myadmin",
     "logging.level.org.springframework.transaction.interceptor=TRACE",

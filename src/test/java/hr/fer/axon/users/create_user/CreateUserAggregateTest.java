@@ -13,6 +13,7 @@ import org.axonframework.test.aggregate.AggregateTestFixture;
 import org.axonframework.test.aggregate.FixtureConfiguration;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.DirtiesContext;
 
 import hr.fer.axon.TestContainersFixture;
 import hr.fer.axon.users.aggregates.UserAggregate;
@@ -22,6 +23,7 @@ import hr.fer.axon.users.events.UserCreated;
 import hr.fer.axon.users.events.UserCreatedFaker;
 import hr.fer.axon.utils.ProjectionFixtureConfiguration;
 
+@DirtiesContext
 class CreateUserAggregateTest extends TestContainersFixture {
 
   @Autowired

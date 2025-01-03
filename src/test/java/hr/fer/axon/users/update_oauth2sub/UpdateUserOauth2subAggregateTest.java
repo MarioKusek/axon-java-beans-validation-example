@@ -15,6 +15,7 @@ import org.axonframework.modelling.command.Repository;
 import org.axonframework.queryhandling.QueryGateway;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.DirtiesContext;
 
 import hr.fer.axon.TestContainersFixture;
 import hr.fer.axon.users.UserDto;
@@ -25,6 +26,7 @@ import hr.fer.axon.users.events.UserOauth2subUpdated;
 import hr.fer.axon.users.queries.FindUserByLogin;
 import hr.fer.axon.utils.ProjectionFixtureConfiguration;
 
+@DirtiesContext
 class UpdateUserOauth2subAggregateTest extends TestContainersFixture {
 
   @Autowired
