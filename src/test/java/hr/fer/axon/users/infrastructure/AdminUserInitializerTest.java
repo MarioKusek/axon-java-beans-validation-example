@@ -16,7 +16,6 @@ import hr.fer.axon.TestContainersFixture;
 import hr.fer.axon.users.user_list.UserListEntity;
 import hr.fer.axon.users.user_list.UserListRepository;
 
-@DirtiesContext
 @TestPropertySource(properties = {
     "admin.user=myadmin",
     "logging.level.org.springframework.transaction.interceptor=TRACE",

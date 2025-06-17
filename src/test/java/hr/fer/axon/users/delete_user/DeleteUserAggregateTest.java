@@ -24,7 +24,6 @@ import hr.fer.axon.users.events.UserDeleted;
 import hr.fer.axon.utils.ProjectionFixtureConfiguration;
 import hr.fer.axon.utils.ViolationException;
 
-@DirtiesContext
 class DeleteUserAggregateTest extends TestContainersFixture {
 
   @Autowired

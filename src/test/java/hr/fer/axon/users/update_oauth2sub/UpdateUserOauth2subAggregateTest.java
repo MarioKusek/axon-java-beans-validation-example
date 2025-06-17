@@ -26,7 +26,6 @@ import hr.fer.axon.users.events.UserOauth2subUpdated;
 import hr.fer.axon.users.queries.FindUserByLogin;
 import hr.fer.axon.utils.ProjectionFixtureConfiguration;
 
-@DirtiesContext
 class UpdateUserOauth2subAggregateTest extends TestContainersFixture {
 
   @Autowired
