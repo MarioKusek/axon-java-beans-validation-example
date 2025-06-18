@@ -29,6 +29,8 @@ dependencies {
 	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	testImplementation 'org.springframework.boot:spring-boot-testcontainers'
 	
 	// Record builder Pattern
   annotationProcessor 'io.soabase.record-builder:record-builder-processor:44'

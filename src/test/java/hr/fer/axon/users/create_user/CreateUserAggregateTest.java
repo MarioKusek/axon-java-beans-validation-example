@@ -23,7 +23,6 @@ import hr.fer.axon.users.events.UserCreated;
 import hr.fer.axon.users.events.UserCreatedFaker;
 import hr.fer.axon.utils.ProjectionFixtureConfiguration;
 
-@DirtiesContext
 class CreateUserAggregateTest extends TestContainersFixture {
 
   @Autowired
